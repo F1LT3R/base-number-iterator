@@ -50,9 +50,9 @@ Try console-logging the number `9999999999999999` in your console. You will see 
 console.log(9999999999999999)
 //         10000000000000000
 
-console.log(9999999999999999 + 3)
-// expect  10000000000000002
-// actual  10000000000000004
+console.log(9999999999999998 + 1)
+// expected 9999999999999999
+// actual  10000000000000000
 ```
 
 
