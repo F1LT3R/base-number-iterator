@@ -2,7 +2,7 @@
  * Bases
  * A Number Class that increments by it's base
  * Author: Alistair MacDonald
- * https://git@github.com/f1lt3r/number-bases.git
+ * https://git@github.com/f1lt3r/base-number-iterator.git
  */
 
 /*

@@ -89,7 +89,6 @@ describe('Num', () => {
 		})
 	})
 
-
 	describe('base:10 (standard)', () => {
 		it('0 + 1 = 1', () => {
 			const num = new Num(0, 10)

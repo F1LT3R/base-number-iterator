@@ -1,0 +1,31 @@
+{
+  "name": "base-number-iterator",
+  "version": "1.0.0",
+  "description": "simple esnext class to count numbers by their bases with nodejs",
+  "main": "bases.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F1LT3R/base-number-iterator.git"
+  },
+  "keywords": [
+    "base",
+    "number",
+    "iterator",
+    "binary",
+    "class",
+    "esnext"
+  ],
+  "author": "f1lt3r",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/F1LT3R/base-number-iterator/issues"
+  },
+  "homepage": "https://github.com/F1LT3R/base-number-iterator#readme",
+  "dependencies": {
+    "expect.js": "^0.3.1"
+  }
+}
