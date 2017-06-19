@@ -110,18 +110,18 @@ describe('Num', () => {
 	})
 
 	describe('BIG numbers', () => {
-		it('JS Number should fail: 9999999999999998 + 3 = 10000000000000000', () => {
-			const n = 9999999999999998 + 3
-			// On paper, this number should be 10000000000000001
-			// but Javascript represents number of
+		it('JS Number should fail: 9999999999999998 + 1 = 10000000000000000', () => {
+			const n = 9999999999999998 + 1
+			// On paper, this number should be 9999999999999999
+			// but Javascript represents numbers of
 			// 9999999999999999 or above as 10000000000000000
 			expect(String(n)).to.be('10000000000000000')
 		})
 
-		it('Bases lib should pass: 9999999999999998 + 3 = 10000000000000001', () => {
+		it('Bases lib should pass: 9999999999999998 + 1 = 9999999999999999', () => {
 			const num = new Num(9999999999999998, 10)
-			num.add(3)
-			expect(num.val).to.be('10000000000000001')
+			num.add(1)
+			expect(num.val).to.be('9999999999999999')
 		})
 	})
 })

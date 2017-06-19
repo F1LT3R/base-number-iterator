@@ -44,17 +44,17 @@ console.log(num.val) // 1000
 
 ## Beyond The JavaScript Number Primitive
 
-Try console-logging the number `9999999999999998` in JavaScript. You will see it output `10000000000000000`, but clearly the result should be `9999999999999999`.
+Try console-logging the number `9999999999999999` in your console. You will see it output `10000000000000000`. You can read more about JavaScript Number precision here: [What is JavaScript's highest integer value that a Number can go to without losing precision?](https://stackoverflow.com/questions/307179/what-is-javascripts-highest-integer-value-that-a-number-can-go-to-without-losin#307200)
 
 ```javascript
-console.log(9999999999999998)
-// Output: 10000000000000000
+console.log(9999999999999999)
+//         10000000000000000
 
-console.log(a + 1)
-// Output:  10000000000000000
+console.log(9999999999999999 + 3)
+// expect  10000000000000002
+// actual  10000000000000004
 ```
 
-You can read more about JavaScript Number precision here: [What is JavaScript's highest integer value that a Number can go to without losing precision?](https://stackoverflow.com/questions/307179/what-is-javascripts-highest-integer-value-that-a-number-can-go-to-without-losin#307200)
 
 With the Num class from this base-number-iterator library, you can add numbers higher than `10000000000000000`.
 
@@ -69,5 +69,5 @@ const num = new Num(9999999999999998, 10)
 num.add(3)
 
 // Log the result
-console.log(num.val)  // 10000000000000001
+console.log(num.val)  // 10000000000000002
 ```
